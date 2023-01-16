@@ -93,8 +93,8 @@ window.setTimeout("waktu()", 1000);
 		document.getElementById("Clock").innerHTML = jam +" : "+ menit +" : "+ detik +" WIB";
 	}
 
-// Count Down Idul Adha
-var countDownDate = new Date("Jan 01, 2023 00:00:00").getTime();
+// Count Down Natal
+var countDownDate = new Date("Des 24, 2023 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -105,11 +105,11 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  document.getElementById("IdulAdha").innerHTML = days + " Days " + hours + " Hours "
+  document.getElementById("Natal").innerHTML = days + " Days " + hours + " Hours "
   + minutes + " Min " + seconds + " Sec ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("IdulAdha").innerHTML = "Selamat Hari Raya Idul Adha ";
+    document.getElementById("Natal").innerHTML = "Selamat Hari Raya Natal 🎉 ";
   }
 }, 1000);
 
